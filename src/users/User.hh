@@ -3,16 +3,16 @@ using namespace std;
 
 class User {
   private:
-    string *name;
+    string name;
     vector<string> messages;
 
   public:
-    User (string *n) {
+    User (string n) {
       name = n;
       messages.push_back("hello world!");
     }
 
-    string *getName() {
+    string getName() {
       return name;
     }
 

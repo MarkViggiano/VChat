@@ -9,8 +9,8 @@ int main() {
   string name;
   cout << "Username:";
   cin >> name;
-  User testUser(&name);
-  cout << *testUser.getName() << endl;
+  User testUser(name);
+  cout << testUser.getName() << endl;
   cout << testUser.getMessages()[0];
   return 0;
 }
